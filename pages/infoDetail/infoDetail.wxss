@@ -1,0 +1,10 @@
+
+.container{
+padding: 20rpx 15rpx;
+}
+.detailText{
+  width: 100%;
+  font-size: 28rpx;
+  color: gray;
+  line-height :50rpx;
+}

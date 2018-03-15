@@ -1,0 +1,28 @@
+<view class='container' wx:for="{{dataArr}}" >
+ <view class='header' >
+ <text class='storeName' >{{item.storeName}}</text>
+  <text class='orderId' >订单号：{{item.orderId}}</text>
+  <view class='showView' >已使用</view>
+  <view class='line' ></view>
+  <image mode='scaleToFill' src='' class='image' ></image>
+  <text class='refund' >支持随时退</text>
+ </view>
+ <view class='main' >
+  <text class='orderInfo' >订单信息</text>
+  <view class='line info' ></view>
+  <view>
+    <image mode='scaleToFill' src='http://yijiao.oss-cn-qingdao.aliyuncs.com/{{item.sysStore.mainImgUrl}}' class='image' ></image>
+    <view class='orderView' >
+     <text class='projectName' >{{item.silist[0].itemName}}</text>
+     <text class='time' >支付时间:{{item.payTime}}</text>
+     <text class='price' >¥{{item.totalPrice}}</text>
+    </view>
+  </view>
+     <text class='projectNum' >项目编号:{{item.tradeNo}}</text>
+   <view> 
+  </view>
+ </view>
+ <view class='footer' >
+ </view>
+
+</view>

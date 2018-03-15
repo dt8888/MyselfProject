@@ -1,0 +1,194 @@
+.header{
+  width: 100%;
+  height: 400rpx;
+  background: #39b5de;
+  border-bottom: 25rpx solid #f3f3f3;
+}
+.avatar{
+  position: absolute;
+  left: 0; right: 0;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 72rpx auto;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.nickname{
+  position: absolute;
+  top: 40rpx;
+  left: 0rpx;right: 0rpx;
+  width: 100%;
+  margin:220rpx auto;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+}
+.level{
+  color: white;
+  padding: 5rpx 40rpx;
+  border-radius: 20rpx;
+  background: rgba(0,0,0,0.4);
+  margin-top:-20rpx; 
+}
+.main{
+ padding: 15rpx;
+ color:gray; 
+ font-size: 15px; 
+ border-bottom: 10px solid #f3f3f3; 
+}
+.lineView{
+  margin-top: 15rpx;
+  border-top: 1px solid #f3f3f3;
+  height: 130rpx;
+}
+.orderView{
+  float: left;
+  width: 25%;
+  height: 130rpx;
+  text-align: center;
+  position: relative;
+}
+.image{
+  position:absolute;
+  width: 100%;
+  height: 50%;
+  top: 15rpx;
+  left: 0;
+}
+.text{
+ position:absolute;
+ width: 100%;
+ height: 35%;
+ bottom: 0rpx;
+ left: 0;
+}
+.content{
+  padding: 20rpx 0 20rpx 20rpx;
+  color: gray;
+  font-size: 15px; 
+  border-bottom: 1px solid #f3f3f3;
+}
+.sm-img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+.pull-right{
+  float: right;
+}
+/**弹出框**/
+.btn { 
+  width: 80%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx;  
+  text-align: center;  
+  margin: 40rpx 10%;  
+  background: #000;  
+  color: #fff;  
+} 
+   
+/*mask*/ 
+.drawer_screen { 
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+} 
+   
+/*content*/ 
+.drawer_box { 
+  width: 650rpx;  
+  overflow: hidden;  
+  position: fixed;  
+  top: 50%;  
+  left: 0;  
+  z-index: 1001;  
+  background: #FAFAFA;  
+  margin: -150px 50rpx 0 50rpx;  
+  border-radius: 3px;  
+} 
+   
+.drawer_title{ 
+  padding:15px;  
+  font: 20px "microsoft yahei";  
+  text-align: center;  
+} 
+.drawer_content { 
+  height: 210px;  
+  overflow-y: scroll; /*超出父盒子高度可滚动*/ 
+} 
+   
+.btn_ok{ 
+  padding: 10px;  
+  font: 20px "microsoft yahei";  
+  text-align: center;  
+  border-top: 1px solid #E8E8EA;  
+  color: #3CC51F;  
+  float: right;
+} 
+.btn_concel{
+  padding: 10px;  
+  font: 20px "microsoft yahei";  
+  text-align: center;  
+  border-top: 1px solid #E8E8EA;  
+  color: #3CC51F;  
+  float: left; 
+}   
+.top{ 
+    padding-top:8px;  
+} 
+.bottom { 
+    padding-bottom:8px;  
+} 
+.title { 
+    height: 30px;  
+    line-height: 30px;  
+    width: 160rpx;  
+    text-align: center;  
+    display: inline-block;  
+    font: 300 28rpx/30px "microsoft yahei";  
+} 
+   
+.input_base { 
+    border: 2rpx solid #ccc;  
+    padding-left: 10rpx;  
+    margin-right: 100rpx;  
+} 
+.input_h30{ 
+    height: 30px;  
+    line-height: 30px;  
+} 
+.btn_code{
+  background-color: gray;
+  width: 180rpx;
+  color: white;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.input_view{ 
+    font: 12px "microsoft yahei";  
+    background: #fff;  
+    color:#000;  
+    line-height: 30px;  
+} 
+input { 
+    font: 12px "microsoft yahei";  
+    background: #fff;  
+    color:#000 ;  
+} 
+radio{ 
+    margin-right: 20px;  
+} 
+.grid { display: -webkit-box; display: box; } 
+.col-0 {-webkit-box-flex:0;box-flex:0;} 
+.col-1 {-webkit-box-flex:1;box-flex:1;} 
+.fl { float: left;} 
+.fr { float: right;} 

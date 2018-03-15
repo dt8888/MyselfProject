@@ -1,0 +1,14 @@
+ <view class='container' >
+  <scroll-view class='bgView'>
+    <view wx:for="{{listData}}" class='itemView'>
+     <text class='textView' >{{item.storeName}}</text>
+     <text class='star' >{{item.star}}</text>
+     <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" class='scroll-h' >
+     <block wx:for="{{item.jslist}}" wx:for-item="data" >
+        <image class='imageView' mode="scaleToFill" src="{{imageUrl}}{{data.headImgUrl}}       " data-headerUrl= "{{imageUrl}}{{data.headImgUrl}}" data-jsgh='{{data.gh}}' bindtap='bigImag' ></image> 
+     </block>
+      </scroll-view>
+    </view>
+  </scroll-view>
+</view> 
+

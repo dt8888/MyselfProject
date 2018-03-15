@@ -1,0 +1,19 @@
+<view class="container"> 
+ 
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"   
+        class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">  
+        <view class="item" wx:for="{{list}}">  
+            <image class="img" src="https://cdn.kuaidi100.com/images/all/56/zhongtong.png"></image>  
+            <view class="text">  
+                <text class="title">{{item.itemName}}</text>  
+                <text class="description">{{item.rebatePrice}}</text>  
+                <text class="description">{{item.carrierId}}</text>  
+            </view>  
+        </view>  
+    </scroll-view>  
+    <view class="body-view">  
+        <loading hidden="{{hidden}}" bindchange="loadingChange">  
+            加载中...  
+        </loading>  
+    </view>  
+</view>  

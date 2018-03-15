@@ -1,0 +1,31 @@
+page{
+  height: 100%;
+}
+ .container{
+  background-color: white;
+  height: 70rpx;
+  width: 100%;
+}
+.bind{
+  width: 20%;
+  height: 50rpx;
+  font-size: 20rpx;
+  background-color: #39b5de;
+  color: white;
+  float: right;
+}
+.telephone{
+  color: gray;
+  float: left;
+  line-height: 70rpx;
+  margin-left: 20rpx;
+}
+.signOut{
+  margin: 400rpx;
+  width: 80%;
+  height: 80rpx;
+  background-color: red;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+} 

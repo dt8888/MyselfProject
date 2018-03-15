@@ -1,0 +1,48 @@
+<!--index.wxml-->
+ 
+<view class='container' >
+<!--中间主要-->
+ <scroll-view scroll-y="true" class='scrollView'>
+<!--轮播图-->
+ <swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+      <block wx:for="{{imgUrls}}">  
+        <swiper-item>  
+           <navigator url='../detail/detail' hover-class="navigator-hover">  
+            <image src="{{item}}" class="slide-image" mode="aspectFill"/>  
+           </navigator>   
+        </swiper-item>  
+      </block>  
+ </swiper>
+
+<!--横线-->
+<view class='bgText'>
+<text class='text'>附近门店</text>
+  <view class='bgLine'></view>
+ <view class='line'></view>
+</view>
+
+ <view wx:for="{{listData}}" wx:for-index="idx" class="item-container"                                       bindtap="showDetail" id="{{idx}}" data-storeid="{{item.storeId}}" data-adress="{{item.address}}" data-sflist="{{item.sflist}}">
+    <view class='imageCover'>
+      <image mode="aspectFill" src="{{imageUrl[idx]}}" class="cover"></image>
+    </view>
+    <view class='imageBgCover'>
+     <image mode="aspectFill" src="/image/home_module_bg.png" class='bgCover'></image>
+    </view>
+    
+     
+    <!--cell底部-->
+     <view class="desc">
+      <view class="left">
+        <view class='storeName'>{{item.storeName}}</view>
+        <view class='address'>{{item.address}}</view>
+         <view class='distance'>"距离"+{{item.distance}}</view>
+      </view>
+      <view class="right">
+        <text class='businessTime'>{{item.businessTime}}</text>
+      </view>
+    </view>
+   </view> 
+  </scroll-view>
+</view>
+

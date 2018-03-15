@@ -1,0 +1,16 @@
+<!--头部-->
+
+<view class='container' wx:for="{{dataArray}}" wx:for-index="idx" wx:for-item="item">
+ <view class='header'>
+  <text class='itemName'>{{item.name}}x{{item.count}}</text>
+  <text class='price'>¥{{item.price}}</text>
+ </view>
+</view>
+
+<!--底部-->
+<view class='bottom'>
+  <view class="count">
+    <text class='text' >共计：￥</text>{{price}}
+  </view>
+<view class='gotoPay' bindtap='gotoPay'>确定下单</view>
+</view>

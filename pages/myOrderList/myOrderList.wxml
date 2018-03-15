@@ -1,0 +1,17 @@
+<view class='container' >
+ <scroll-view class='scrollView' scroll-y="true"  bindscrolltolower="loadMore">
+  <view wx:for="{{dataList}}" class='bgView' bindtap='orderDetail' data-model='{{item}}' >
+   <image mode='scaleToFill' src='http://yijiao.oss-cn-qingdao.aliyuncs.com/{{item.sysStore.mainImgUrl}}' class='image' ></image>
+  <text class='storeName' >{{item.storeName}}</text>
+  <text class='orderId' >订单号：{{item.orderId}}</text>
+  <view class='line' ></view>
+  <text class='projectName' >{{item.silist[0].itemName}}</text>
+  <text class='price' >¥{{item.totalPrice}}</text>
+  <text class='num' >数量:{{item.num}}</text>
+  </view>
+ </scroll-view>
+ <view class="class_item_end">
+    {{title}}
+  </view>
+
+</view>

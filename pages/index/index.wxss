@@ -1,0 +1,99 @@
+/**index.wxss**/
+
+.slide-image{
+  width: 100%;
+  height: 49vw;
+}
+.scrollView{
+ width: 100%;
+ text-align:center;
+ background-color: ghostwhite
+}
+.item-container{
+  width: 100%;
+  height: 35vw+150px;
+  padding-top: 20px;
+
+  margin-bottom: 10px;
+  background-color:white;
+  position: relative;
+}
+.bgText{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+.text
+{
+  color: #39b5de;
+  font-size: 30rpx;
+}
+.bgLine{
+  width: 20%;
+  background-color: #39b5de;
+  margin: 0rpx auto;
+  height: 5rpx;
+}
+.line{
+width: 95%;  
+background-color: gray;
+opacity: 0.6;
+height: 2rpx;
+margin: 0rpx auto;
+display: block;
+}
+.imageCover{
+  width: 100%;
+  height: 35vw;
+}
+.imageBgCover{
+  position: absolute;
+  width: 100%;
+  height: 35vw;
+  top: 20px;
+  left: 0px;
+}
+.cover{
+  margin-top: 0rpx;
+  width: 100%;
+  height: 35vw; 
+}
+.bgCover{
+  width: 50%;
+  height: 35vw; 
+  float: left;
+}
+.desc {
+  margin: 10rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+.left{
+  text-align: left;
+  margin: 0rpx 20rpx;
+}
+.storeName{
+
+  font-size: 35rpx;
+  color: #39b5de;
+}
+.desc .right {
+   display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.businessTime{
+  font-size: 20rpx;
+  color:gray;
+}
+.left .address{
+  font-size: 30rpx;
+  color: #39b5de;
+}
+.distance{
+  font-size: 20rpx;
+  color:red;
+}

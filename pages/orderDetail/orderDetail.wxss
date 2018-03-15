@@ -1,0 +1,109 @@
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.header{
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 15%;
+  font-size: 25rpx;
+  color: black;
+  margin-bottom: 10rpx;
+}
+.storeName{
+ position: absolute;
+ left: 20rpx;
+ top: 15rpx;
+}
+.orderId{
+ position: absolute;
+ left: 20rpx;
+ top: 50rpx;
+}
+.showView{
+ position: absolute;
+ right: 20rpx;
+ top: 20rpx;
+ width: 100rpx;
+ height: 40rpx;
+ font-size: 20rpx;
+ background-color: gray;
+ color: white; 
+ text-align: center;
+ line-height: 40rpx;
+}
+.line{
+  position: absolute;
+  width: 90%;
+  height: 1rpx;
+  top: 95rpx;
+  left: 20rpx;
+  background-color: #f3f3f3;
+  margin: auto auto;
+}
+.refund{
+   position: absolute;
+   bottom: 15rpx;
+   left: 50rpx;
+   height: 50rpx;
+   line-height: 50rpx;
+   color: #39b5de;
+}
+.main{
+  position: absolute;
+  margin-top: 0rpx;
+  width: 100%;
+  height: 17%;
+  top: 16%;
+  left: 0rpx;
+  background-color: white;
+  font-size: 25rpx;
+  color: black;
+}
+.orderInfo{
+ position: absolute;
+ left: 20rpx;
+ top: 10rpx;
+ color: grey;
+ height: 50rpx;
+}
+.info{
+  position: absolute;
+  top: 60rpx;
+}
+.image{
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+  height: 130rpx;
+  width: 170rpx;
+}
+.orderView{
+  position: absolute;
+  top: 10rpx;
+  left:200rpx;
+  width: 90%;
+  height: 150rpx;
+}
+.projectName{
+ position: absolute;
+  left:20rpx;
+}
+.time{
+  position: absolute;
+  top: 45rpx;
+  left:20rpx;
+}
+.price{
+  position: absolute;
+  bottom: 20rpx;
+  left:20rpx;
+  color:#39b5de; 
+}
+.projectNum{
+  position: absolute;
+  left: 20rpx;
+  bottom: 10rpx;
+}

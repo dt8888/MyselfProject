@@ -1,0 +1,55 @@
+<view class="header flex-col" >
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <text class="nickname"  bindtap='gotoLogin' >{{userInfo.nickName}}</text>
+</view>
+
+ <view class="main flex-col" bindtap="toOrderList" data-totab="全部订单">
+  <text>我的订单</text>
+  <image src="/image/right.png" class="sm-img pull-right"bindtap='myOrderList' data-index='{{4}}' ></image>
+  <view class='lineView' >
+   <view wx:for="{{textArr}}" class='orderView' bindtap="myOrderList" data-index='{{index}}' >
+   <image src='{{imageArr[index]}}' class='image' mode='aspectFit' ></image>
+    <text class='text' >{{item}}</text>
+   </view>
+  </view>
+</view> 
+<view class="content flex-row" bindtap="toCoupon">
+  <image src="/image/mine-Invitation.png" class="sm-img"></image>
+  <text>我的优惠券</text>
+  <image src="/image/right.png" class="sm-img pull-right"></image>
+</view>
+
+<view class="content flex-row" bindtap="toVerification">
+  <image src="/image/mine-Merchant.png" class="sm-img"></image>
+  <text>商户核销</text>
+  <image src="/image/right.png" class="sm-img pull-right"></image>
+</view>
+<view class="content flex-row" bindtap="toSeting">
+  <image src="/image/mine-Merchant.png" class="sm-img"></image>
+  <text>设置</text>
+  <image src="/image/right.png" class="sm-img pull-right"></image>
+</view>
+
+<!--弹出框-->
+<!--使用animation属性指定需要执行的动画  -->  
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}" > 
+  <!--drawer content-->  
+  <view class="drawer_title">登录</view> 
+  <view class="drawer_content"> 
+    <view class="top grid"> 
+      <label class="title col-0">手机号码</label> 
+      <input class="input_base input_h30 col-1" placeholder="请输入手机号码" value="" bindblur="mobileInputEvent" ></input> 
+    </view> 
+    <view class="top grid"> 
+      <label class="title col-0">验证码</label> 
+      <input class="input_base input_h30 col-1 code" placeholder="验证码" value="" bindblur='codeInputEvent'></input> 
+      <view class="btn_code" bindtap="getCode" disabled="{{buttonDisable}}" >{{verifyCodeTime}}</view> 
+    </view> 
+  </view> 
+  <view class="btn_ok" bindtap="powerDrawer" data-statu="close">确定</view> 
+   <view class="btn_concel" bindtap="concel" >取消</view> 
+</view>
+<!-- <view class="content flex-row">
+  <button open-type="contact" bindgetphonenumber='gotoNews'>客服会话</button>
+  <button bindtap='scanCode'>扫码</button>
+</view> -->

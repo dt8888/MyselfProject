@@ -1,0 +1,7 @@
+<view class='bgView' >
+  <image class='img' mode='scaleToFill' src='{{imgUrl}}' >
+  </image>
+   <view class='bottomView' >
+    <text >工号:{{jsNum}}</text>
+   </view>
+</view>

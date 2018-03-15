@@ -1,0 +1,65 @@
+
+.bgView{
+  width: 100%;
+}
+.header{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1px solid gainsboro;
+}
+.header .itemName{
+  height: 100rpx;
+  margin-left: 20px;
+  margin-top: 15px;
+  color: grey;
+  font-size: 30rpx;
+  float: left;
+
+}
+.price{
+  margin-top: 15px;
+  height: 100rpx;
+  margin-right: 20px;
+  color: #39b5de;
+  font-size: 32rpx;
+  float: right;
+}
+.bottom{
+  border-top: 1px solid gainsboro;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+ 
+}
+.count{
+  height: 100rpx;
+  color: #39b5de;
+  margin: auto 0rpx;
+  line-height: 100rpx;
+}
+.count .text{
+  color: #39b5de;
+  font-size: 28rpx;
+  float: left;
+  margin-left: 20rpx;
+  
+}
+.gotoPay{
+  width: 30%;
+  height: 80rpx;
+  top: 10rpx;
+  line-height: 80rpx;
+  right: 20rpx;
+  position: absolute;
+  background-color: #39b5de;
+  color: white;
+  font-size: 28rpx;
+  float: right;
+  vertical-align:middle;
+  border-radius: 8rpx;
+}

@@ -1,0 +1,36 @@
+.container{  
+    height: 100%;  
+    padding: 20rpx;  
+}  
+  
+.item{  
+    display: flex;  
+    margin-bottom: 50rpx;  
+width:100%;  
+background:#f0f0f0;  
+overflow:hidden;  
+}  
+  
+.img{  
+    height: 100rpx;  
+    width: 100rpx;  
+    border-radius: 50%;  
+}  
+  
+.text{  
+    display: flex;  
+    flex-shrink:1;  
+    flex-grow:1;  
+    padding: 10rpx;  
+    flex-wrap: wrap;  
+    font-size: 50rpx;  
+}  
+  
+.title{  
+    font-size: 50rpx;  
+    margin:10rpx 100rpx 10rpx 100rpx;  
+}  
+.description{  
+    font-size: 50rpx;  
+    align-self:flex-end;  
+}  

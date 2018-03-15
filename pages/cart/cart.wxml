@@ -1,0 +1,54 @@
+
+<!--head-->
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+  <block wx:for="{{imgUrls}}">  
+    <swiper-item>  
+      <navigator url="{{item.link}}" hover-class="navigator-hover">  
+      <image src="{{imgUrl}}{{item.url}}" class="slide-image" mode="aspectFill"/>  
+      </navigator>   
+    </swiper-item>  
+  </block>  
+</swiper> 
+    <view class="more">{{address}}</view>
+<!--主盒子-->
+<view class="container">
+  <!--list-->
+  <view class="goodslist">
+    <!--item-->
+    <block wx:for="{{list}}">
+      <view class="goods">
+        <!--左侧图片盒子-->
+        <view>
+          <image src="{{imgList[index]}}" class="good-img" />
+        </view>
+        <!--右侧说明部分-->
+        <view class="good-cont">
+          <!--上--文字说明-->
+          <view class="goods-navigator">
+            <text class="good-name">{{item.itemName}}</text>
+          </view>
+          <!--下--价格部分-->
+          <view class="good-price">
+           <text class='rebatePrice'>￥{{item.rebatePrice}}</text>
+            <text class='price'>￥{{item.price}}</text>
+            <button class='buyButton' bindtap='addcart' data-item="{{item}}"  data-price="{{item.rebatePrice}}" data-name="{{item.itemName}}" data-id='{{item.itemId}}'>立即购买</button>
+            <!--<image id="{{item.id}}" class="cart" src="/image/new_73.jpg" bindtap="addcart" />
+            -->
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<!--去结算-->
+ <view class="cart-fixbar">
+    <block wx:if="{{price>0}}">
+       <view class="count">
+           <text>合计：￥</text>{{price}}
+       </view>
+    </block>   
+       <view class="order" bindtap='gotoOrder' data-price="{{price}}" data-name="{{itemName}}">
+          去结算
+       </view>
+</view> 

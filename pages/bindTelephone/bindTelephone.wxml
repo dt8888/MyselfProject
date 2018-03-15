@@ -1,0 +1,13 @@
+
+ <view class='container'>
+ <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class='bind' >绑定手机号</button>
+  <view class='telephone' >{{telePhone}}</view>
+ <view class="signOut" bindtap='signOut' >退出登录</view>
+</view>  
+
+<form bindsubmit='formSubmit' report-submit='true' bindreset='formReset' >
+  <view class='btn-area' >
+   <input name="input" placeholder='222'/>
+   <button form-type='submit' >提交</button>
+  </view>
+</form>

@@ -1,0 +1,43 @@
+.bgView{
+  background-color: ghostwhite;
+}
+
+
+.item-container {
+  background-color: white;
+  margin-bottom: 10rpx;
+  height: 230rpx;
+}
+
+.cover {
+  width: 150rpx;
+  height:150rpx;
+  float: right;
+  display: block;
+  padding-top: 20rpx;
+  padding-right: 15rpx;
+  padding-bottom: 20rpx;
+}
+.title{
+  padding-top: 20rpx;
+  padding-left: 15rpx;
+  font-size: 35rpx;
+}
+.time{
+  padding-left: 15rpx;
+  font-size: 25rpx;
+  margin-top: 0rpx;
+  color: gainsboro;
+}
+.detail {
+ width: 100%-150rpx;
+ padding-left: 15rpx;
+ 
+ font-size: 25rpx;
+ color: gray;
+ overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical; 
+}

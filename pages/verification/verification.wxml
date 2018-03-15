@@ -1,0 +1,21 @@
+<view class='container' >
+ <view class='storeName'  >
+   <text >{{storeName}}</text>
+ </view>
+
+ <view class='imgCode' >
+   <image  src='/image/order.png' mode='scaleToFill' class='img' bindtap='scandCode' ></image>
+    <!-- <text class='text' >核销二维码</text>  -->
+    <view>核销二维码</view>
+ </view>
+
+  <view class='inputCode' >
+   <input placeholder='输入核销码' class='code' bindblur='inputCode' ></input>
+   <view class='button_ok' bindtap='buttonOk' >确定</view>
+  </view>
+  <view class='bottom' >
+     <view class='checkOrder' >查看已核销的订单</view>
+  </view>
+</view>
+
+
